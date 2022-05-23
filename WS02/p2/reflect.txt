@@ -1,14 +1,50 @@
 *****************************************************************************
                               Reflection
                           Workshop - #2 (P2)
-Full Name  : 
-Student ID#: 
-Email      : 
-Section    : 
+Full Name  : Delisha Madhan
+Student ID#: 166471219
+Email      : dmadhan@myseneca.ca
+Section    : NJJ
 
 Authenticity Declaration:
 I declare this submission is the result of my own work and has not been
 shared with any other student or 3rd party content provider. This submitted
 piece of work is entirely of my own creation.
 *****************************************************************************
+ANS1. Every computer works on binary language ,which is language of 1 and 0 hence it represents only whole no. so the computer  will covert non terminating no. to  nearest non fraction number hence will not be able to represent exact fractional or floating value ,so is the case of cent2,as it is the fractional value till 15 decimal places ,the computer rounded  it off to nearest value 10.12,therefore the exact total price could not be presented.
 
+ANS2. For example we have total of$323.51,we'll then convert it into integer
+      follwed by denomination of 50 dollars or 20 dollars bill.
+      
+      int main(void)
+      {
+         float total 323.51;
+         int fifty=50,twenty=20,total cents,fiftycents,twentycents,leftnooffifty,nooftwenty;
+         totalcents=(int)(323.51*100);
+         fiftycents=fifty*100;             //as cents will be in decimals first likepresebted after dolllars
+         twentycents=twenty*100;
+         nooffifty=totalcents/fiftycents;  //6=no.of fifty bills
+         left=totalcents%fiftycents;       //remaining balance
+         nooftwenty=left/twentycents;      //1=no of twenty
+         lefleft%twentycents;              //remaining amount
+         return 0;
+         
+      }
+      
+      so this is how I'll code for denomination of bills.
+      
+ANS3.  #include <stdio.h>
+int main(void)
+{
+    int totalcents;//to store exact amount of cents
+    printf("\n enter total cents=\n);
+    scanf("%d",&totalcents);
+    //display cents into dollars using casting
+    //long double,float,double
+    //display values upto 2 decimal places
+    
+    printf("\n the amount in dollars is $%.2lf",(long double)cents/100);
+    printf("\n the amount in dollars is $%.2f",(float)totalcents/100);
+    printf("\n the amount in dollars is $(double)totalcents/100");
+    
+}
